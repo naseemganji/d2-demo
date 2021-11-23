@@ -6,7 +6,7 @@
 //how do I add numbers
 console.log(1+2)
 // do I store multiple numbers
-const arr = [1,1,1,1,1,1,1];
+const arr = process.argv.slice(2);
 console.log("------------")
 console.log(arr)
 //how do I add these numbers in accrray
@@ -15,6 +15,7 @@ for (let i = 0; i <arr.length; i++) {
   console.log("i is === ", i ," and arr[i] is === ", arr[i]);
   sum = sum+arr[i]
   console.log("total is ===", sum)
-  //console.log("--------");
-  //console.log(i++)
+    //console.log(i++)
 }
+console.log("--------");
+
