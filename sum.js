@@ -11,7 +11,6 @@ console.log("------------")
 console.log(arr)
 //how do I add these numbers in array
 for (let i = 0; i <arr.length; i++) {
-  const element = arr[i];
   console.log("i is === ", i ," and arr[i] is === ", arr[i]);
   //console.log("--------");
   //console.log(i++)
