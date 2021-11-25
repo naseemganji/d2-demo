@@ -1,15 +1,20 @@
 const min = function (numbers) {
-  var minValue = numbers[0];
-  for (let i = 1; i < numbers.length; i++) {
+  let minValue = numbers[0];
+  let minCount = 1;
+  for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] < minValue) {
       minValue = numbers[i];
     }
+    if (minValue===numbers[i]) {
+      minCount++;
+    }
   }
+  console.log(`minCount ${minCount}`)
   return minValue;
 };
 
 const flightPrices = [1260, 490, 599, 1400, 820];
-console.log(`The cheapest flight amongst $1260, $490, $599, $1400 and $820 costs \$${min(flightPrices)}`);
+console.log(`The cheapest flight amongst $1260, $490, $599, $1400 and $820 costs ${min(flightPrices)}`);
 
 const golfScores = [-1, 3, 0, -4, 1, 4, -2];
 console.log(`The winning golf score amongst -1, 3, 0, -4, 1, 4 and -2 is ${min(golfScores)}`);
