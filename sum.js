@@ -7,6 +7,5 @@ for (let element of arr){
 return result;
 }
 const arr = process.argv.slice(2);
-
 const result = sum(arr);
 console.log(`total is === ${result}`)
