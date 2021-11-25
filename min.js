@@ -1,8 +1,8 @@
-const min = function (array) {
-  var minValue = array[0];
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] < minValue) {
-      minValue = array[i];
+const min = function (numbers) {
+  var minValue = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < minValue) {
+      minValue = numbers[i];
     }
   }
   return minValue;
